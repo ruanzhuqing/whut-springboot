@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c398e5c4-5337-4d41-8029-85bd27ca1103" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/SpringbootApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/entities/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/mappers/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/resources/mappers/CustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/test/java/CustomerServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/java/application/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/java/application/HelloSpringboot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/java/controller/HelloSpringboot.java" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/java/application/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-01/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/target/classes/application/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/target/classes/controller/HelloSpringboot.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -58,11 +67,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="service.impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -77,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.SpringbootApplication">
     <configuration name="HelloSpringboot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="whut-springboot-demo-01" />
       <extension name="coverage">
@@ -91,8 +106,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="whut-springboot-demo-02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.whut.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.whut.SpringbootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SpringbootApplication" />
         <item itemvalue="Spring Boot.HelloSpringboot" />
       </list>
     </recent_temporary>
@@ -107,8 +136,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626920595842</updated>
-      <workItem from="1626920597223" duration="3173000" />
+      <workItem from="1626920597223" duration="9662000" />
     </task>
+    <task id="LOCAL-00001" summary="修改了由于controller和application文件配置而导致的网页错误">
+      <created>1626923846092</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626923846092</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,5 +161,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改了由于controller和application文件配置而导致的网页错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了由于controller和application文件配置而导致的网页错误" />
   </component>
 </project>

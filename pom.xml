@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>whut-springboot-demo-01</module>
+        <module>whut-springboot-demo-02</module>
     </modules>
     <!--
     <packaging>pom</packaging> 打包类型为pom，通常用在父工程中
