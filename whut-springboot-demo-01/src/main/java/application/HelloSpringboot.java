@@ -11,8 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @createdate 2021/7/22
  */
 @SpringBootApplication
-public class HelloController {
+public class HelloSpringboot  {
     public static void main(String[] args) {
-        SpringApplication.run(HelloController.class,args);
+        SpringApplication.run(HelloSpringboot.class,args);
     }
 }

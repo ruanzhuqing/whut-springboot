@@ -1,4 +1,4 @@
-package controller;
+package application.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @createdate 2021/7/22
  */
 @RestController
-public class HelloSpringboot {
+public class HelloController {
     /**
      * @GetMapping将HTTP GET请求映射到特定的方法。例如：将浏览器的/hello请求映射到hello()方法
      * @return

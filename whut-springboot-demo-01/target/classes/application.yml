@@ -1,3 +1,7 @@
 # 微服务应用程序端口号
 server:
-  port: 8088
+  port: 8080
+spring:
+  # 微服务名称
+  application:
+    name: whut-springboot-8080

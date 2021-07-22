@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c398e5c4-5337-4d41-8029-85bd27ca1103" name="Default Changelist" comment="" />
+    <list default="true" id="c398e5c4-5337-4d41-8029-85bd27ca1103" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/java/application/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/java/application/HelloSpringboot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/java/controller/HelloSpringboot.java" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/java/application/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-01/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-01/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/target/classes/application/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/target/classes/controller/HelloSpringboot.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +24,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -25,6 +37,7 @@
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
@@ -34,14 +47,23 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1veRVztjaBLkk57gIb2Le2aVdHo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,22 +78,22 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="HelloController" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="HelloSpringboot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="whut-springboot-demo-01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="application.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="application.HelloController" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="application.HelloSpringboot" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.HelloController" />
+        <item itemvalue="Spring Boot.HelloSpringboot" />
       </list>
     </recent_temporary>
   </component>
@@ -85,11 +107,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626920595842</updated>
-      <workItem from="1626920597223" duration="2348000" />
+      <workItem from="1626920597223" duration="3173000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
