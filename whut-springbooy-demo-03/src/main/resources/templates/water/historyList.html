@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> XXX送水公司后台管理系统</title>
+
+    <!--Bootstrap固定框架-->
+    <link rel='stylesheet' th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.css}">
+    <link rel='stylesheet' th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap-theme.css}">
+    <!--图标库-->
+    <link rel='stylesheet' th:href='@{/css/material-design-iconic-font.min.css}'>
+    <!--核心样式-->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+<body>
+
+<div id="viewport">
+
+    <!-- Sidebar -->
+    <div id="sidebar" th:replace="waterMainMenu::menu">
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <!-- 导航 -->
+        <nav class="navbar navbar-default" th:replace="waterMainMenu::nav">
+        </nav>
+        <!-- 内容 -->
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-3" >
+                    <a class="btn btn-primary" type="button" th:href="@{/history/presaveHistory}">
+                        <i class="glyphicon glyphicon-plus"></i>
+                        添加历史记录
+                    </a>
+                </div>
+                <div  class="col-md-9">
+                    <form class="form-inline" th:action="@{/history/search}">
+                        <div class="form-group">
+                            <label>开始时间</label>
+                            <input type="date" class="form-control" name="startDate"
+                                   th:max="${#dates.format(#dates.createToday(),'yyyy-MM-dd')}">
+                        </div>
+                        <div class="form-group">
+                            <label >结束时间</label>
+                            <input type="date" class="form-control" name="endDate"
+                                   th:max="${#dates.format(#dates.createToday(),'yyyy-MM-dd')}">
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="glyphicon glyphicon-search"></i>
+                            搜索
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-md-12">
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>记录编号</th>
+                                <th>员工名称</th>
+                                <th>送水时间</th>
+                                <th>客户名称</th>
+                                <th>送水数量</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr th:each="history : ${historyList}">
+                                <td th:text="${history.hid}"></td>
+                                <td th:text="${history.worker.workerName}"></td>
+                                <td th:text="${#dates.format(history.sendWaterTime,'yyyy-MM-dd')}"></td>
+                                <td th:text="${history.customer.custName}"></td>
+                                <td th:text="${history.sendWaterCount}"></td>
+                                <td>
+                                    <a th:href="@{'/history/preupdateHistory/'+${history.hid}}" style="margin-right: 5px;font-size: 20px">
+                                        <i class="glyphicon glyphicon-edit"></i>
+                                    </a>
+                                    <a th:href="@{'/history/deleteHistory/'+${history.hid}}" style="font-size: 20px">
+                                        <i class="glyphicon glyphicon-remove"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+</body>
+</html>

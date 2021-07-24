@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.whut.mappers.HistoryMapper">
+    <!-- 多表查询，关联多个实体 -->
+    <resultMap id="historyMap" type="History">
+        <id property="hid" column="hid"></id>
+        <result property="sendWaterTime" column="send_water_time"></result>
+        <result property="sendWaterCount" column="send_water_count"></result>
+
+        <!-- 查询关联表worker和customer的worker_name和cust_name -->
+        <association property="worker" javaType="Worker">
+            <result property="workerName" column="worker_name"></result>
+        </association>
+        <association property="customer" javaType="Customer">
+            <result property="custName" column="cust_name"></result>
+        </association>
+    </resultMap>
+    <!-- 查询返回结果集映射到上诉的historyMap中 -->
+    <select id="listHistory" resultMap="historyMap">
+        select h.hid, w.worker_name,h.send_water_time,c.cust_name,h.send_water_count
+        from history h,worker w,customer c
+        where h.worker_id = w.wid and h.cust_id = c.cid;
+    </select>
+
+    <select id="seachHistory" resultMap="historyMap" parameterType="String">
+        select h.hid, w.worker_name,h.send_water_time,c.cust_name,h.send_water_count
+        from history h,worker w,customer c
+        where h.worker_id = w.wid and h.cust_id = c.cid
+        <if test="startTime != null and startTime.length>0">
+            and h.send_water_time &gt;= #{startTime}
+        </if>
+        <if test="endTime != null and endTime.length>0">
+            and h.send_water_time &lt;= #{endTime}
+        </if>
+
+    </select>
+
+    <insert id="saveHistory" parameterType="History">
+        insert into history(cust_id,worker_id,send_water_time,send_water_count)
+        values (#{customer.cid},#{worker.wid},#{sendWaterTime},#{sendWaterCount})
+    </insert>
+    <select id="getHistoryById" resultMap="historyMap">
+        select h.hid, w.worker_name,h.send_water_time,c.cust_name,h.send_water_count
+        from history h,worker w,customer c
+        where h.worker_id = w.wid and h.cust_id = c.cid and
+            hid = #{hid}
+    </select>
+
+    <update id="updateHistory" parameterType="History">
+        update history
+        set     cust_id=#{customer.cid},worker_id = #{worker.wid},
+            send_water_time=#{sendWaterTime},send_water_count=#{sendWaterCount}
+        where hid = #{hid}
+    </update>
+
+    <delete id="deleteHistory" parameterType="History">
+        delete from history where hid = #{hid}
+    </delete>
+
+</mapper>

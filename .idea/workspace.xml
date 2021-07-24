@@ -2,22 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c398e5c4-5337-4d41-8029-85bd27ca1103" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/SpringbootApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/entities/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/mappers/CustomerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/resources/mappers/CustomerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/test/java/CustomerServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/WaterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/controller/HistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/controller/WorkerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/entities/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/entities/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/entities/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/entities/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/mappers/AccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/mappers/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/mappers/HistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/mappers/WorkerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/service/HistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/service/WorkerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/service/impl/HistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/service/impl/WorkerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/mappers/AccountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/mappers/CustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/mappers/HistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/mappers/WorkerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/static/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/static/css/style2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/static/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/static/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/static/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water/custList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water/custSave.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water/custUpdate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water/historyList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water/historySave.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water/historyUpdate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water/waterMainMenu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water/workerList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water/workerSave.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water/workerUpdate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whut-springbooy-demo-03/src/test/java/PasswordTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-01/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-01/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/java/com/whut/entities/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/whut-springboot-demo-02/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +66,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -67,16 +105,34 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/java/com/whut/service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/whut-springbooy-demo-03/src/main/resources/templates/water" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Code\water\whut-springboot\whut-springboot-demo-02\src\main\resources\mappers" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Code\water\whut-springboot\whut-springbooy-demo-03\src\main\resources\templates\water" />
+      <recent name="E:\Code\water\whut-springboot\whut-springbooy-demo-03\src\main\resources\mappers" />
+      <recent name="E:\Code\water\whut-springboot\whut-springbooy-demo-03\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.whut.controller" />
+      <recent name="com.whut.service.impl" />
+      <recent name="com.whut.service" />
+      <recent name="com.whut.mappers" />
+      <recent name="com.whut.entities" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.whut.service.impl" />
       <recent name="service.impl" />
     </key>
   </component>
@@ -92,7 +148,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootApplication">
+  <component name="RunManager" selected="Spring Boot.WaterApplication">
+    <configuration name="PasswordTest.passworfTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="whut-springbooy-demo-03" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PasswordTest" />
+      <option name="METHOD_NAME" value="passworfTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloSpringboot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="whut-springboot-demo-01" />
       <extension name="coverage">
@@ -119,8 +185,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WaterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="whut-springbooy-demo-03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.whut.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.whut.WaterApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.PasswordTest.passworfTest" />
+      <item itemvalue="Spring Boot.HelloSpringboot" />
+      <item itemvalue="Spring Boot.SpringbootApplication" />
+      <item itemvalue="Spring Boot.WaterApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.WaterApplication" />
+        <item itemvalue="JUnit.PasswordTest.passworfTest" />
         <item itemvalue="Spring Boot.SpringbootApplication" />
         <item itemvalue="Spring Boot.HelloSpringboot" />
       </list>
@@ -136,7 +226,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626920595842</updated>
-      <workItem from="1626920597223" duration="9662000" />
+      <workItem from="1626920597223" duration="20667000" />
+      <workItem from="1627002832897" duration="24010000" />
+      <workItem from="1627088641862" duration="17323000" />
     </task>
     <task id="LOCAL-00001" summary="修改了由于controller和application文件配置而导致的网页错误">
       <created>1626923846092</created>
@@ -145,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626923846092</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="训练了service、mapper、controller分层实现输出customer表">
+      <created>1626934264978</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626934264978</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +255,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -164,6 +265,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改了由于controller和application文件配置而导致的网页错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了由于controller和application文件配置而导致的网页错误" />
+    <MESSAGE value="训练了service、mapper、controller分层实现输出customer表" />
+    <option name="LAST_COMMIT_MESSAGE" value="训练了service、mapper、controller分层实现输出customer表" />
   </component>
 </project>

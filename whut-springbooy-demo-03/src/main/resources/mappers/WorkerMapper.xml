@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.whut.mappers.WorkerMapper">
+    <select id="listWorker" resultType="Worker">
+        select wid,worker_name,worker_salary,worker_money,worker_image from worker
+    </select>
+
+    <select id="seachWorker" parameterType="string" resultType="Worker">
+        select wid,worker_name,worker_salary,worker_money,worker_image
+        from worker
+        where 1 = 1
+        <if test="workerName != null and workerName.length > 0">
+            and worker_name like concat('%',#{workerName},'%')
+        </if>
+    </select>
+
+    <select id="getWorkerById" resultType="Worker">
+        select wid,worker_name,worker_salary,worker_money,worker_image
+        from worker
+        where wid = #{wid}
+    </select>
+
+    <insert id="saveWorker" parameterType="Worker" useGeneratedKeys="true" keyProperty="wid">
+        insert into worker(worker_name,worker_salary,worker_money,worker_image)
+        values (#{workerName},#{workerSalary},#{workerMoney},#{workerImage})
+    </insert>
+
+    <update id="updateWorker" parameterType="Worker">
+        update worker
+        set worker_name = #{workerName},worker_salary=#{workerSalary},worker_money=#{workerMoney},worker_image=#{workerImage}
+        where wid = #{wid}
+    </update>
+
+    <delete id="deleteWorker" parameterType="Integer">
+        delete from worker where wid = #{wid}
+    </delete>
+</mapper>

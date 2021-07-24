@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> XXX送水公司后台管理系统</title>
+
+    <!--Bootstrap固定框架-->
+    <link rel='stylesheet' th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.css}">
+    <link rel='stylesheet' th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap-theme.css}">
+    <!--图标库-->
+    <link rel='stylesheet' th:href='@{/css/material-design-iconic-font.min.css}'>
+    <!--核心样式-->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+<body>
+
+<div id="viewport">
+
+    <!-- Sidebar -->
+    <div id="sidebar" th:replace="waterMainMenu::menu">
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <!-- 导航 -->
+        <nav class="navbar navbar-default" th:replace="waterMainMenu::nav">
+        </nav>
+        <!-- 内容 -->
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-4" >
+                    <a class="btn btn-primary" type="button" th:href="@{/cust/presaveCust}">
+                        <i class="glyphicon glyphicon-plus"></i>
+                        添加客户
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <form class="form-inline" method="POST" th:action="@{/cust/searchCust}">
+                        <div class="input-group"  >
+                            <input type="text" th:value="${searchValue}" class="form-control" name="custName" placeholder="请输入客户名称..." style="width: 300px">
+<!--                            <input type="text" th:value="${searchValue}" th:if="${not #strings.isEmpty(searchValue)}" class="form-control" name="custName" placeholder="请输入客户名称..." style="width: 300px">-->
+<!--                            <input type="text" th:value="${searchValue}" th:unless="${not #strings.isEmpty(searchValue)}" class="form-control" name="custName" placeholder="请输入客户名称..." style="width: 300px">-->
+                            <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                                搜索
+                            </button>
+                       </span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-12">
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>客户编号</th>
+                                <th>客户名称</th>
+                                <th>客户地址</th>
+                                <th>联系方式</th>
+                                <th>水票数量</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr th:each="cust : ${customerList}">
+                                <td th:text="${cust.cid}"></td>
+                                <td th:text="${cust.custName}"></td>
+                                <td th:text="${cust.custAddress}"></td>
+                                <td th:text="${cust.custMobile}"></td>
+                                <td th:text="${cust.custTicket}"></td>
+                                <td>
+                                    <a th:href="@{'/cust/preupdateCust/'+${cust.cid}}" style="margin-right: 5px;font-size: 20px">
+                                        <i class="glyphicon glyphicon-edit"></i>
+<!--                                        <input type="button" class="btn btn-primary" name="update" value="修改">-->
+                                    </a>
+                                    <a th:href="@{'/cust/deleteCust/'+${cust.cid}}" style="font-size: 20px">
+                                        <i class="glyphicon glyphicon-remove"></i>
+<!--                                        <input type="button" class="btn btn-warning" name="delete" value="删除">-->
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+</body>
+</html>

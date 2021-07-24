@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>whut-springboot-demo-02</artifactId>
-
+    <artifactId>whut-springbooy-demo-03</artifactId>
     <dependencies>
         <!--用户构建Web。包含RESTful风格框架、SpringMVC和默认的嵌入式容器Tomcat-->
         <dependency>
@@ -73,6 +72,11 @@
             <groupId>org.webjars</groupId>
             <artifactId>jquery</artifactId>
         </dependency>
-
+        <!--胡图-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
     </dependencies>
+
 </project>
